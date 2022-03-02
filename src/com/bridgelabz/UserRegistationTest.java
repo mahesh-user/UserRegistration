@@ -10,8 +10,9 @@ public class UserRegistationTest {
     }
 
     @Test
-    void givenFirstNameWithOutFirstLetterCapitalMInThreeCharactersReturnsFalse() {
+    void givenLastWithFirstLetterCapitalMInThreeCharactersReturnsTrue() {
         UserRegistratin userRegistration = new UserRegistratin();
-        Assertions.assertFalse(userRegistration.validationOfFirstName("bhavi"));
+        Assertions.assertTrue(userRegistration.validationOfLastName("Bhavi"));
+
     }
 }
